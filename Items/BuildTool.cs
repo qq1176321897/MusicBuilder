@@ -13,9 +13,8 @@ namespace MusicBuilder.Items
 
         public override void AddRecipes()
         {
-            ModRecipe recipe = new ModRecipe(base.mod);
-            recipe.SetResult(this, 1);
-            recipe.AddRecipe();
+            var recipe = Mod.CreateRecipe(Type);
+            recipe.Register();
         }
 
         private static void DoDelay(ref int x, ref int y, int delay, ref int curmax, ref int status)
@@ -33,6 +32,8 @@ namespace MusicBuilder.Items
                         Builder.PlaceWire(x + (status == 0 ? 1 : -1), y, WireType.Green);
                         curmax = 0;
                     }
+                    else
+                        Builder.PlaceWire(x + (status < COLMAX ? 1 : -1), y, WireType.None);
                     if (status < COLMAX)
                         Builder.PlaceTimer(++x, y, Direction.Right, ModContainer.time[p]);
                     else
@@ -52,7 +53,10 @@ namespace MusicBuilder.Items
             uint cur = 0;
             bool startNote = true;
             //starting wire
-            Builder.PlaceTimer(x, y, Direction.Right, 0);
+            Builder.PlaceTimer(++x, y, Direction.Right, 0);
+            WorldGen.PlaceTile(x - 1, y, TileID.Switches);
+            Builder.PlaceWire(x, y, WireType.Green);
+            Builder.PlaceWire(x - 1, y, WireType.Green);
 
             foreach (Note note in midi.notes)
             {
@@ -62,6 +66,7 @@ namespace MusicBuilder.Items
                     DoDelay(ref x, ref y, (int)(note.time - cur), ref curmax, ref status); //place delayer and refresh x position
                     curnote = 1;
                     Builder.PlaceWire(x, y + curnote, ((x & 0x1) == 0) ? WireType.Red : WireType.Blue);
+                    WorldGen.KillTile(x, y + curnote);
                 }
                 curmax = Math.Max(curmax, ++curnote);
                 Builder.PlaceNoteBlock(x, y + curnote, (Prog) (1024 + note.instrument), note.pitch, note.lasting, note.velocity);
@@ -79,8 +84,8 @@ namespace MusicBuilder.Items
             base.item.height = 32;
             base.item.useAnimation = 0x19;
             base.item.useTime = 30;
-            base.item.useStyle = 5;
-            base.item.rare = 11;
+            base.item.useStyle = ItemUseStyleID.Shoot;
+            base.item.rare = ItemRarityID.Expert;
             base.item.channel = true;
             base.item.autoReuse = false;
             base.item.value = 0x0;

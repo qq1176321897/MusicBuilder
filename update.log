@@ -71,3 +71,5 @@ MusicBuilder v3.0.1
 MusicBuilder v3.1
     1. Add channel volume support
     2. Add extremely long note support
+MusicBuilder v4.0
+    1. ported to 1.4

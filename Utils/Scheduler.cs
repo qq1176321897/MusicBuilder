@@ -92,5 +92,10 @@ namespace MusicBuilder.Utils
             schedules = new List<Schedule>();
             newSchedules = new List<Schedule>();
         }
+
+        public void ClearAll()
+        {
+            schedules = new List<Schedule>();
+        }
     }
 }

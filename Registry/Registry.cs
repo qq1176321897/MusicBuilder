@@ -1,4 +1,6 @@
 using Microsoft.Xna.Framework;
+using MusicBuilder.Items;
+using System;
 using System.Collections.Generic;
 
 namespace MusicBuilder.Registry
@@ -12,12 +14,14 @@ namespace MusicBuilder.Registry
     {
         public readonly Color txt, bgc;
         public readonly string name;
+        public readonly int type;
 
-        public NoteData(Color txt, Color bgc, string name)
+        public NoteData(Color txt, Color bgc, string name, int type)
         {
             this.txt = txt;
             this.bgc = bgc;
             this.name = name;
+            this.type = type;
         }
     }
     public class DelayData
@@ -25,12 +29,14 @@ namespace MusicBuilder.Registry
         public readonly Color bgc;
         public readonly Color off;
         public readonly Color lit;
+        public readonly int type;
 
-        public DelayData(Color bgc, Color off, Color lit)
+        public DelayData(Color bgc, Color off, Color lit, int type)
         {
             this.bgc = bgc;
             this.off = off;
             this.lit = lit;
+            this.type = type;
         }
     }
     

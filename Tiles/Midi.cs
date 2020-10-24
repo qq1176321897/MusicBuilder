@@ -2,7 +2,7 @@ using MusicBuilder.Registry;
 
 namespace MusicBuilder.Tiles
 {
-    public class acpiano : Noteblock
+    public class acpiano : Noteblock<Items.acpiano>
     {
         public override Prog NOTE
         {
@@ -13,7 +13,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class britepno : Noteblock
+    public class britepno : Noteblock<Items.britepno>
     {
         public override Prog NOTE
         {
@@ -24,7 +24,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class synpiano : Noteblock
+    public class synpiano : Noteblock<Items.synpiano>
     {
         public override Prog NOTE
         {
@@ -35,7 +35,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class honkytonk : Noteblock
+    public class honkytonk : Noteblock<Items.honkytonk>
     {
         public override Prog NOTE
         {
@@ -46,7 +46,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class epiano1 : Noteblock
+    public class epiano1 : Noteblock<Items.epiano1>
     {
         public override Prog NOTE
         {
@@ -57,7 +57,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class epiano2 : Noteblock
+    public class epiano2 : Noteblock<Items.epiano2>
     {
         public override Prog NOTE
         {
@@ -68,7 +68,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class hrpschrd : Noteblock
+    public class hrpschrd : Noteblock<Items.hrpschrd>
     {
         public override Prog NOTE
         {
@@ -79,7 +79,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class clavinet : Noteblock
+    public class clavinet : Noteblock<Items.clavinet>
     {
         public override Prog NOTE
         {
@@ -90,7 +90,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class celeste : Noteblock
+    public class celeste : Noteblock<Items.celeste>
     {
         public override Prog NOTE
         {
@@ -101,7 +101,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class glocken : Noteblock
+    public class glocken : Noteblock<Items.glocken>
     {
         public override Prog NOTE
         {
@@ -112,7 +112,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class musicbox : Noteblock
+    public class musicbox : Noteblock<Items.musicbox>
     {
         public override Prog NOTE
         {
@@ -123,7 +123,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class vibes : Noteblock
+    public class vibes : Noteblock<Items.vibes>
     {
         public override Prog NOTE
         {
@@ -134,7 +134,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class marimba : Noteblock
+    public class marimba : Noteblock<Items.marimba>
     {
         public override Prog NOTE
         {
@@ -145,7 +145,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class xylophon : Noteblock
+    public class xylophon : Noteblock<Items.xylophon>
     {
         public override Prog NOTE
         {
@@ -156,7 +156,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class tubebell : Noteblock
+    public class tubebell : Noteblock<Items.tubebell>
     {
         public override Prog NOTE
         {
@@ -167,7 +167,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class santur : Noteblock
+    public class santur : Noteblock<Items.santur>
     {
         public override Prog NOTE
         {
@@ -178,7 +178,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class homeorg : Noteblock
+    public class homeorg : Noteblock<Items.homeorg>
     {
         public override Prog NOTE
         {
@@ -189,7 +189,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class percorg : Noteblock
+    public class percorg : Noteblock<Items.percorg>
     {
         public override Prog NOTE
         {
@@ -200,7 +200,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class rockorg : Noteblock
+    public class rockorg : Noteblock<Items.rockorg>
     {
         public override Prog NOTE
         {
@@ -211,7 +211,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class churchorg : Noteblock
+    public class churchorg : Noteblock<Items.churchorg>
     {
         public override Prog NOTE
         {
@@ -222,7 +222,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class reedorg : Noteblock
+    public class reedorg : Noteblock<Items.reedorg>
     {
         public override Prog NOTE
         {
@@ -233,7 +233,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class accordn : Noteblock
+    public class accordn : Noteblock<Items.accordn>
     {
         public override Prog NOTE
         {
@@ -244,7 +244,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class harmonica : Noteblock
+    public class harmonica : Noteblock<Items.harmonica>
     {
         public override Prog NOTE
         {
@@ -255,7 +255,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class concrtna : Noteblock
+    public class concrtna : Noteblock<Items.concrtna>
     {
         public override Prog NOTE
         {
@@ -266,7 +266,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class nyguitar : Noteblock
+    public class nyguitar : Noteblock<Items.nyguitar>
     {
         public override Prog NOTE
         {
@@ -277,7 +277,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class acguitar : Noteblock
+    public class acguitar : Noteblock<Items.acguitar>
     {
         public override Prog NOTE
         {
@@ -288,7 +288,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class jazzgtr : Noteblock
+    public class jazzgtr : Noteblock<Items.jazzgtr>
     {
         public override Prog NOTE
         {
@@ -299,7 +299,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class cleangtr : Noteblock
+    public class cleangtr : Noteblock<Items.cleangtr>
     {
         public override Prog NOTE
         {
@@ -310,7 +310,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class mutegtr : Noteblock
+    public class mutegtr : Noteblock<Items.mutegtr>
     {
         public override Prog NOTE
         {
@@ -321,7 +321,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class odguitar : Noteblock
+    public class odguitar : Noteblock<Items.odguitar>
     {
         public override Prog NOTE
         {
@@ -332,7 +332,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class distgtr : Noteblock
+    public class distgtr : Noteblock<Items.distgtr>
     {
         public override Prog NOTE
         {
@@ -343,7 +343,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class gtrharm : Noteblock
+    public class gtrharm : Noteblock<Items.gtrharm>
     {
         public override Prog NOTE
         {
@@ -354,7 +354,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class acbass : Noteblock
+    public class acbass : Noteblock<Items.acbass>
     {
         public override Prog NOTE
         {
@@ -365,7 +365,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class fngrbass : Noteblock
+    public class fngrbass : Noteblock<Items.fngrbass>
     {
         public override Prog NOTE
         {
@@ -376,7 +376,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class pickbass : Noteblock
+    public class pickbass : Noteblock<Items.pickbass>
     {
         public override Prog NOTE
         {
@@ -387,7 +387,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class fretless : Noteblock
+    public class fretless : Noteblock<Items.fretless>
     {
         public override Prog NOTE
         {
@@ -398,7 +398,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class slapbas1 : Noteblock
+    public class slapbas1 : Noteblock<Items.slapbas1>
     {
         public override Prog NOTE
         {
@@ -409,7 +409,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class slapbas2 : Noteblock
+    public class slapbas2 : Noteblock<Items.slapbas2>
     {
         public override Prog NOTE
         {
@@ -420,7 +420,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class synbass1 : Noteblock
+    public class synbass1 : Noteblock<Items.synbass1>
     {
         public override Prog NOTE
         {
@@ -431,7 +431,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class synbass2 : Noteblock
+    public class synbass2 : Noteblock<Items.synbass2>
     {
         public override Prog NOTE
         {
@@ -442,7 +442,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class violin : Noteblock
+    public class violin : Noteblock<Items.violin>
     {
         public override Prog NOTE
         {
@@ -453,7 +453,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class viola : Noteblock
+    public class viola : Noteblock<Items.viola>
     {
         public override Prog NOTE
         {
@@ -464,7 +464,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class cello : Noteblock
+    public class cello : Noteblock<Items.cello>
     {
         public override Prog NOTE
         {
@@ -475,7 +475,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class contraba : Noteblock
+    public class contraba : Noteblock<Items.contraba>
     {
         public override Prog NOTE
         {
@@ -486,7 +486,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class marcato1 : Noteblock
+    public class marcato1 : Noteblock<Items.marcato1>
     {
         public override Prog NOTE
         {
@@ -497,7 +497,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class pizzcato : Noteblock
+    public class pizzcato : Noteblock<Items.pizzcato>
     {
         public override Prog NOTE
         {
@@ -508,7 +508,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class harp : Noteblock
+    public class harp : Noteblock<Items.harp>
     {
         public override Prog NOTE
         {
@@ -519,7 +519,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class timpani : Noteblock
+    public class timpani : Noteblock<Items.timpani>
     {
         public override Prog NOTE
         {
@@ -530,7 +530,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class marcato2 : Noteblock
+    public class marcato2 : Noteblock<Items.marcato2>
     {
         public override Prog NOTE
         {
@@ -541,7 +541,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class slowstr : Noteblock
+    public class slowstr : Noteblock<Items.slowstr>
     {
         public override Prog NOTE
         {
@@ -552,7 +552,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class synstr1 : Noteblock
+    public class synstr1 : Noteblock<Items.synstr1>
     {
         public override Prog NOTE
         {
@@ -563,7 +563,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class synstr2 : Noteblock
+    public class synstr2 : Noteblock<Items.synstr2>
     {
         public override Prog NOTE
         {
@@ -574,7 +574,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class choir : Noteblock
+    public class choir : Noteblock<Items.choir>
     {
         public override Prog NOTE
         {
@@ -585,7 +585,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class doo : Noteblock
+    public class doo : Noteblock<Items.doo>
     {
         public override Prog NOTE
         {
@@ -596,7 +596,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class voices : Noteblock
+    public class voices : Noteblock<Items.voices>
     {
         public override Prog NOTE
         {
@@ -607,7 +607,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class orchhit : Noteblock
+    public class orchhit : Noteblock<Items.orchhit>
     {
         public override Prog NOTE
         {
@@ -618,7 +618,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class trumpet : Noteblock
+    public class trumpet : Noteblock<Items.trumpet>
     {
         public override Prog NOTE
         {
@@ -629,7 +629,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class trombone : Noteblock
+    public class trombone : Noteblock<Items.trombone>
     {
         public override Prog NOTE
         {
@@ -640,7 +640,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class tuba : Noteblock
+    public class tuba : Noteblock<Items.tuba>
     {
         public override Prog NOTE
         {
@@ -651,7 +651,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class mutetrum : Noteblock
+    public class mutetrum : Noteblock<Items.mutetrum>
     {
         public override Prog NOTE
         {
@@ -662,7 +662,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class frenchorn : Noteblock
+    public class frenchorn : Noteblock<Items.frenchorn>
     {
         public override Prog NOTE
         {
@@ -673,7 +673,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class hitbrass : Noteblock
+    public class hitbrass : Noteblock<Items.hitbrass>
     {
         public override Prog NOTE
         {
@@ -684,7 +684,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class synbras1 : Noteblock
+    public class synbras1 : Noteblock<Items.synbras1>
     {
         public override Prog NOTE
         {
@@ -695,7 +695,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class synbras2 : Noteblock
+    public class synbras2 : Noteblock<Items.synbras2>
     {
         public override Prog NOTE
         {
@@ -706,7 +706,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class sprnosax : Noteblock
+    public class sprnosax : Noteblock<Items.sprnosax>
     {
         public override Prog NOTE
         {
@@ -717,7 +717,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class altosax : Noteblock
+    public class altosax : Noteblock<Items.altosax>
     {
         public override Prog NOTE
         {
@@ -728,7 +728,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class tenorsax : Noteblock
+    public class tenorsax : Noteblock<Items.tenorsax>
     {
         public override Prog NOTE
         {
@@ -739,7 +739,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class barisax : Noteblock
+    public class barisax : Noteblock<Items.barisax>
     {
         public override Prog NOTE
         {
@@ -750,7 +750,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class oboe : Noteblock
+    public class oboe : Noteblock<Items.oboe>
     {
         public override Prog NOTE
         {
@@ -761,7 +761,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class englhorn : Noteblock
+    public class englhorn : Noteblock<Items.englhorn>
     {
         public override Prog NOTE
         {
@@ -772,7 +772,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class bassoon : Noteblock
+    public class bassoon : Noteblock<Items.bassoon>
     {
         public override Prog NOTE
         {
@@ -783,7 +783,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class clarinet : Noteblock
+    public class clarinet : Noteblock<Items.clarinet>
     {
         public override Prog NOTE
         {
@@ -794,7 +794,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class piccolo : Noteblock
+    public class piccolo : Noteblock<Items.piccolo>
     {
         public override Prog NOTE
         {
@@ -805,7 +805,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class flute : Noteblock
+    public class flute : Noteblock<Items.flute>
     {
         public override Prog NOTE
         {
@@ -816,7 +816,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class recorder : Noteblock
+    public class recorder : Noteblock<Items.recorder>
     {
         public override Prog NOTE
         {
@@ -827,7 +827,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class woodflut : Noteblock
+    public class woodflut : Noteblock<Items.woodflut>
     {
         public override Prog NOTE
         {
@@ -838,7 +838,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class bottle : Noteblock
+    public class bottle : Noteblock<Items.bottle>
     {
         public override Prog NOTE
         {
@@ -849,7 +849,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class shakazul : Noteblock
+    public class shakazul : Noteblock<Items.shakazul>
     {
         public override Prog NOTE
         {
@@ -860,7 +860,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class whistle : Noteblock
+    public class whistle : Noteblock<Items.whistle>
     {
         public override Prog NOTE
         {
@@ -871,7 +871,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class ocarina : Noteblock
+    public class ocarina : Noteblock<Items.ocarina>
     {
         public override Prog NOTE
         {
@@ -882,7 +882,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class sqrwave : Noteblock
+    public class sqrwave : Noteblock<Items.sqrwave>
     {
         public override Prog NOTE
         {
@@ -893,7 +893,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class sawwave : Noteblock
+    public class sawwave : Noteblock<Items.sawwave>
     {
         public override Prog NOTE
         {
@@ -904,7 +904,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class calliope : Noteblock
+    public class calliope : Noteblock<Items.calliope>
     {
         public override Prog NOTE
         {
@@ -915,7 +915,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class chiflead : Noteblock
+    public class chiflead : Noteblock<Items.chiflead>
     {
         public override Prog NOTE
         {
@@ -926,7 +926,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class charang : Noteblock
+    public class charang : Noteblock<Items.charang>
     {
         public override Prog NOTE
         {
@@ -937,7 +937,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class voxlead : Noteblock
+    public class voxlead : Noteblock<Items.voxlead>
     {
         public override Prog NOTE
         {
@@ -948,7 +948,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class lead5th : Noteblock
+    public class lead5th : Noteblock<Items.lead5th>
     {
         public override Prog NOTE
         {
@@ -959,7 +959,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class basslead : Noteblock
+    public class basslead : Noteblock<Items.basslead>
     {
         public override Prog NOTE
         {
@@ -970,7 +970,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class fantasia : Noteblock
+    public class fantasia : Noteblock<Items.fantasia>
     {
         public override Prog NOTE
         {
@@ -981,7 +981,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class warmpad : Noteblock
+    public class warmpad : Noteblock<Items.warmpad>
     {
         public override Prog NOTE
         {
@@ -992,7 +992,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class polysyn : Noteblock
+    public class polysyn : Noteblock<Items.polysyn>
     {
         public override Prog NOTE
         {
@@ -1003,7 +1003,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class ghostie : Noteblock
+    public class ghostie : Noteblock<Items.ghostie>
     {
         public override Prog NOTE
         {
@@ -1014,7 +1014,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class bowglass : Noteblock
+    public class bowglass : Noteblock<Items.bowglass>
     {
         public override Prog NOTE
         {
@@ -1025,7 +1025,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class metalpad : Noteblock
+    public class metalpad : Noteblock<Items.metalpad>
     {
         public override Prog NOTE
         {
@@ -1036,7 +1036,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class halopad : Noteblock
+    public class halopad : Noteblock<Items.halopad>
     {
         public override Prog NOTE
         {
@@ -1047,7 +1047,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class sweeper1 : Noteblock
+    public class sweeper1 : Noteblock<Items.sweeper1>
     {
         public override Prog NOTE
         {
@@ -1058,7 +1058,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class aurora : Noteblock
+    public class aurora : Noteblock<Items.aurora>
     {
         public override Prog NOTE
         {
@@ -1069,7 +1069,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class soundtrk : Noteblock
+    public class soundtrk : Noteblock<Items.soundtrk>
     {
         public override Prog NOTE
         {
@@ -1080,7 +1080,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class crystal : Noteblock
+    public class crystal : Noteblock<Items.crystal>
     {
         public override Prog NOTE
         {
@@ -1091,7 +1091,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class atmosphr : Noteblock
+    public class atmosphr : Noteblock<Items.atmosphr>
     {
         public override Prog NOTE
         {
@@ -1102,7 +1102,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class freshair : Noteblock
+    public class freshair : Noteblock<Items.freshair>
     {
         public override Prog NOTE
         {
@@ -1113,7 +1113,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class unicorn : Noteblock
+    public class unicorn : Noteblock<Items.unicorn>
     {
         public override Prog NOTE
         {
@@ -1124,7 +1124,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class sweeper2 : Noteblock
+    public class sweeper2 : Noteblock<Items.sweeper2>
     {
         public override Prog NOTE
         {
@@ -1135,7 +1135,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class startrak : Noteblock
+    public class startrak : Noteblock<Items.startrak>
     {
         public override Prog NOTE
         {
@@ -1146,7 +1146,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class sitar : Noteblock
+    public class sitar : Noteblock<Items.sitar>
     {
         public override Prog NOTE
         {
@@ -1157,7 +1157,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class banjo : Noteblock
+    public class banjo : Noteblock<Items.banjo>
     {
         public override Prog NOTE
         {
@@ -1168,7 +1168,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class shamisen : Noteblock
+    public class shamisen : Noteblock<Items.shamisen>
     {
         public override Prog NOTE
         {
@@ -1179,7 +1179,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class koto : Noteblock
+    public class koto : Noteblock<Items.koto>
     {
         public override Prog NOTE
         {
@@ -1190,7 +1190,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class kalimba : Noteblock
+    public class kalimba : Noteblock<Items.kalimba>
     {
         public override Prog NOTE
         {
@@ -1201,7 +1201,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class bagpipes : Noteblock
+    public class bagpipes : Noteblock<Items.bagpipes>
     {
         public override Prog NOTE
         {
@@ -1212,7 +1212,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class fiddle : Noteblock
+    public class fiddle : Noteblock<Items.fiddle>
     {
         public override Prog NOTE
         {
@@ -1223,7 +1223,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class shannai : Noteblock
+    public class shannai : Noteblock<Items.shannai>
     {
         public override Prog NOTE
         {
@@ -1234,7 +1234,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class carillon : Noteblock
+    public class carillon : Noteblock<Items.carillon>
     {
         public override Prog NOTE
         {
@@ -1245,7 +1245,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class agogo : Noteblock
+    public class agogo : Noteblock<Items.agogo>
     {
         public override Prog NOTE
         {
@@ -1256,7 +1256,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class steeldrum : Noteblock
+    public class steeldrum : Noteblock<Items.steeldrum>
     {
         public override Prog NOTE
         {
@@ -1267,7 +1267,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class woodblock : Noteblock
+    public class woodblock : Noteblock<Items.woodblock>
     {
         public override Prog NOTE
         {
@@ -1278,7 +1278,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class taiko : Noteblock
+    public class taiko : Noteblock<Items.taiko>
     {
         public override Prog NOTE
         {
@@ -1289,7 +1289,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class toms : Noteblock
+    public class toms : Noteblock<Items.toms>
     {
         public override Prog NOTE
         {
@@ -1300,7 +1300,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class syntom : Noteblock
+    public class syntom : Noteblock<Items.syntom>
     {
         public override Prog NOTE
         {
@@ -1311,7 +1311,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class revcymb : Noteblock
+    public class revcymb : Noteblock<Items.revcymb>
     {
         public override Prog NOTE
         {
@@ -1322,7 +1322,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class fxfret : Noteblock
+    public class fxfret : Noteblock<Items.fxfret>
     {
         public override Prog NOTE
         {
@@ -1333,7 +1333,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class fxblow : Noteblock
+    public class fxblow : Noteblock<Items.fxblow>
     {
         public override Prog NOTE
         {
@@ -1344,7 +1344,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class seashore : Noteblock
+    public class seashore : Noteblock<Items.seashore>
     {
         public override Prog NOTE
         {
@@ -1355,7 +1355,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class jungle : Noteblock
+    public class jungle : Noteblock<Items.jungle>
     {
         public override Prog NOTE
         {
@@ -1366,7 +1366,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class telephone : Noteblock
+    public class telephone : Noteblock<Items.telephone>
     {
         public override Prog NOTE
         {
@@ -1377,7 +1377,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class helicptr : Noteblock
+    public class helicptr : Noteblock<Items.helicptr>
     {
         public override Prog NOTE
         {
@@ -1388,7 +1388,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class applause : Noteblock
+    public class applause : Noteblock<Items.applause>
     {
         public override Prog NOTE
         {
@@ -1399,7 +1399,7 @@ namespace MusicBuilder.Tiles
         }
     }
 
-    public class ringwhsl : Noteblock
+    public class ringwhsl : Noteblock<Items.ringwhsl>
     {
         public override Prog NOTE
         {
@@ -1409,7 +1409,7 @@ namespace MusicBuilder.Tiles
             }
         }
     }
-    public class drum : Noteblock
+    public class drum : Noteblock<Items.drum>
     {
         public override Prog NOTE
         {

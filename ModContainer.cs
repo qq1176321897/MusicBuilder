@@ -9,6 +9,7 @@ using MusicBuilder.Registry;
 using MusicBuilder.Utils;
 using MusicBuilder.Tiles;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace MusicBuilder
 {
@@ -42,6 +43,10 @@ namespace MusicBuilder
             "applause",  "ringwhsl",  "drum"
         };
 
+
+        public static Texture2D TextureBorderNT, TexturePitchNT, TextureOctaveNT, TextureBorderDT, TextureInsideDT;
+        public static Texture2D TextureBorderNI, TextureInsideNI, TextureBorderDI, TextureInsideDI;
+
         public const int tailLength = 60;
         public override void Load()
         {
@@ -53,26 +58,30 @@ namespace MusicBuilder
             Registries.delayData = new Dictionary<int, DelayData>();
             Registries.delayers = new List<int>();
 
-            for (int i = 0; i < 129; ++i)
-                Registries.noteData.Add((Prog) (1024 + i), new NoteData(new Color(0, 0, 0), ColorUtils.ColorHue(rand.NextDouble()), Instrument[i]));
+            TextureBorderNT = GetTexture("Tiles/NoteblockBorder").Value;
+            TexturePitchNT = GetTexture("Tiles/NoteblockPitch").Value;
+            TextureOctaveNT = GetTexture("Tiles/NoteblockOctave").Value;
+            TextureBorderDT = GetTexture("Tiles/DelayerBorder").Value;
+            TextureInsideDT = GetTexture("Tiles/DelayerInside").Value;
 
-            for (int i = -1; i < time.Length; ++i)
-            {
-                Color lit = ColorUtils.ColorHue(rand.NextDouble());
-                Color bg = new Color((lit.R + 0) / 4, (lit.G + 0) / 4, (lit.B + 0) / 4);
-                Color off = new Color((lit.R + 0) / 2, (lit.G + 0) / 2, (lit.B + 0) / 2);
-                Registries.delayData.Add((ushort)(i == -1 ? 0 : time[i]), new DelayData(bg, off, lit));
-            }
+            TextureBorderNI = GetTexture("Items/NoteblockBorder").Value;
+            TextureInsideNI = GetTexture("Items/NoteblockInside").Value;
+            TextureBorderDI = GetTexture("Items/DelayerBorder").Value;
+            TextureInsideDI = GetTexture("Items/DelayerInside").Value;
 
-            Delayer.Load();
-            Noteblock.Load();
             DLLContainer.Load();
 
             IntPtr nullptr = new IntPtr(0);
             uint result = DLLContainer.midiOutOpen(out midiHandle, 0u, nullptr, nullptr, 0);
             if (result != 0)
-                throw new SystemException("Failed to open midi device. code " + result);
+                throw new Exception("Failed to open midi device. code " + result);
 
+        }
+
+        public override void PreSaveAndQuit()
+        {
+            ModContent.GetInstance<Scheduler>().ClearAll();
+            ModContent.GetInstance<SoundManager>().StopAll();
         }
 
         public override void Unload()
@@ -81,8 +90,16 @@ namespace MusicBuilder
             Registries.delayers = null;
             Registries.delayData = null;
 
-            Delayer.Unload();
-            Noteblock.Unload();
+            TextureBorderNT = null;
+            TexturePitchNT = null;
+            TextureOctaveNT = null;
+            TextureBorderDT = null;
+            TextureInsideDT = null;
+            TextureBorderNI = null;
+            TextureInsideNI = null;
+            TextureBorderDI = null;
+            TextureInsideDI = null;
+
             DLLContainer.midiOutClose(midiHandle);
             DLLContainer.Unload();
 
